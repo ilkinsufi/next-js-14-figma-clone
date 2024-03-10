@@ -53,7 +53,7 @@ const Live = () => {
     setReaction((reactions) => [
       ...reactions,
       {
-        point: { x: cursor.x, y: cursor.y },
+        point: { x: event.x, y: event.y },
         value: event.value,
         timestamp: Date.now(),
       },
@@ -155,7 +155,7 @@ const Live = () => {
       onPointerUp={handlePointerUp}
       className="h-[100vh] w-full flex justify-center items-center text-center"
     >
-      <h1 className="text-2xl text-white">Cursor Chat</h1>
+      <h1 className="text-2xl text-white">Cursor Chat & Reactions</h1>
 
       {reaction.map((r) => (
         <FlyingReaction
