@@ -9,7 +9,6 @@
 
   </div>
 
-  <h3 align="center">Figma Clone</h3>
 
 </div>
 
